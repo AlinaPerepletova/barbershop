@@ -1,0 +1,58 @@
+body {
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px;
+	line-height: 1.714;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	background-color: darkgrey;
+}
+
+.container {
+	width: 940px;
+	margin: 0 auto;
+}
+
+.container:after {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+
+/*Header*/
+
+
+}
+.login {
+	display: block;
+	text-decoration: none;
+	position: relative;
+}
+
+
+/*Feauters*/
+.features-title {
+	position: relative;
+	font-size: 30px;
+	margin-bottom: 80px;
+}
+.features-title:after {
+	content: '';
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background: url("../img/square.png") no-repeat 0 0;
+}
+
+/*Social buttons*/
+.social-btn {
+	display: inline-block;
+	width: 43px;
+	height: 43px;
+	background-color: rgb(0, 0, 0);
+}
