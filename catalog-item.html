@@ -9,12 +9,12 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 
-<body>
+<body class="second-page">
 	<header class="main-header">
 		<div class="container clearfix">
 			<nav class="main-navigation">
 				<ul>
-					<li>
+					<li class="active">
 						<a href="index.html">Главная</a>
 					</li>
 					<li>
@@ -26,7 +26,7 @@
 					<li>
 						<a href="price.html">Прайс-лист</a>
 					</li>
-					<li class="active">
+					<li>
 						<a href="catalog.html">Магазин</a>
 					</li>
 					<li>
@@ -36,46 +36,49 @@
 			</nav>
 			<div class="user-block">
 				<a href="#" class="login"><i class="fa fa-sign-in fa-lg"></i>Вход</a>
-            </div>
+			</div>
 		</div>
 	</header>
 
-		<div class="container">
-			<h1 class="catalog-title">Набор для путешествий «Baxter of California»</h1>
-			<div class="breadcrumbs">
-				<a href="index.html">Главная</a>
-				<a href="catalog.html">Магазин</a>
-				<a href="catalog.html">Средства для ухода</a>
-				<span class="breadcrumbs-active">Набор для путешествий «Baxter of California»</span>
+	<div class="container clearfix">
+		<h1 class="catalog-title">Набор для путешествий «Baxter of California»</h1>
+		<div class="breadcrumbs">
+			<a href="index.html">Главная</a>
+			<a href="catalog.html">Магазин</a>
+			<a href="catalog.html">Средства для ухода</a>
+			<span class="breadcrumbs-active">Набор для путешествий «Baxter of California»</span>
+		</div>
+		<div class="catalog clearfix">
+			<!--Не могу разобраться с размерами фотографий, с фотошопа экспортируются с тенью, у третей маленькой она самая большая, может нужно было вырезать без тени и тень делать css?-->
+			<div class="item-gallery">
+				<div class="item-gallery-large"><img src="pict/baxter-of-california-kit-3.png" width="480" height="517" alt="Набор для путешествий «Baxter of California»"></div>
+				<div class="item-gallery-small"><img src="pict/baxter-of-california-kit-1.png" width="160" height="169" alt="Набор для путешествий «Baxter of California»"></div>
+				<div class="item-gallery-small"><img src="pict/baxter-of-california-kit-2.png" width="160" height="169" alt="Набор для путешествий «Baxter of California»"></div>
+				<div class="item-gallery-small"><img src="pict/baxter-of-california-kit-3-min.png" width="165" height="174" alt="Набор для путешествий «Baxter of California»"></div>
 			</div>
-			<div class="catalog clearfix">
-				<div class="item-gallery">
-					<div class="item-gallery-large"><img src="pict/baxter-of-california-kit-3.png" width="460" height="498" alt="Набор для путешествий «Baxter of California»"></div>
-					<div class="item-gallery-small"><img src="pict/baxter-of-california-kit-1.png" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
-					<div class="item-gallery-small"><img src="pict/baxter-of-california-kit-2.png" height="149" alt="Набор для путешествий «Baxter of California»"></div>
-					<div class="item-gallery-small"><img src="pict/baxter-of-california-kit-3.png" width="140" height="149" alt="Набор для путешествий «Baxter of California»"></div>
-				</div>
-				<div class="item-column-right">
+			<div class="item-column-right">
+				<div class="item-info clearfix">
 					<div class="item-instoke">Есть в наличии</div>
 					<div class="item-art">Артикул: dexter-ae</div>
-					<p class="item-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-					<div class="catalog-price">2900 руб.</div>
-					<a href="catalog-item.html" class="btn">Купить</a>
-					<h2 class="content-column-title">В набор входят:</h2>
-					<ul class="list">
-						<li>Средство для умывания (50 мл)</li>
-						<li>Увлажняющий крем (50 мл)</li>
-						<li>Крем для бритья (50 мл)</li>
-						<li>Крем после бритья, шампунь (50 мл)</li>
-						<li>Удобная кожаная косметичка</li>
-					</ul>
-
 				</div>
+				<p class="item-description">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+				<div class="catalog-price">2900 руб.</div>
+				<a href="catalog-item.html" class="btn">Купить</a>
+				<h2 class="content-column-title">В набор входят:</h2>
+				<ul class="list">
+					<li>Средство для умывания (50 мл)</li>
+					<li>Увлажняющий крем (50 мл)</li>
+					<li>Крем для бритья (50 мл)</li>
+					<li>Крем после бритья, шампунь (50 мл)</li>
+					<li>Удобная кожаная косметичка</li>
+				</ul>
+
 			</div>
 		</div>
+	</div>
 
-	<footer class="main-header">
-		<div class="container">
+	<footer class="main-footer">
+		<div class="container clearfix">
 			<section class="footer-contacts">
 				Барбершоп «Бородинский»
 				<br> Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8
@@ -84,11 +87,11 @@
 				<br> телефон: +7 (495) 666-02-66
 			</section>
 			<section class="footer-social">
-                <p>Давайте дружить!</p>
-                <a href="#" class="social-btn" title="ВКонтакте"><i class="fa fa-vk fa-2x"></i></a>
-                <a href="#" class="social-btn" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
-                <a href="#" class="social-btn" title="Instagramm"><i class="fa fa-instagram fa-2x"></i></a>
-            </section>
+				<p>Давайте дружить!</p>
+				<a href="#" class="social-btn" title="ВКонтакте"><i class="fa fa-vk fa-2x"></i></a>
+				<a href="#" class="social-btn" title="Facebook"><i class="fa fa-facebook fa-2x"></i></a>
+				<a href="#" class="social-btn" title="Instagramm"><i class="fa fa-instagram fa-2x"></i></a>
+			</section>
 			<section class="footer-copyright">
 				<p>Дизайн сайта:</p>
 				<a href="#" class="btn">htmlacademy.ru</a>

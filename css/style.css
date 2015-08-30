@@ -1,19 +1,32 @@
 body {
+	min-width: 800px;
+	margin: 0;
+	padding: 0;
 	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 14px;
 	line-height: 1.714;
 	font-weight: bold;
 	text-transform: uppercase;
+	color: white;
+}
+
+.index-page {
+	background: rgb(0, 0, 0) url("../img/barbershop-index.jpg") no-repeat center top;
+	background-size: 1800px auto;
+}
+
+.second-page {
+	background: url("../img/background-page.png");
 	color: rgb(0, 0, 0);
-	background-color: darkgrey;
 }
 
 .container {
 	width: 940px;
 	margin: 0 auto;
+	border: 1px dashed yellow;	/*для сетки*/
 }
 
-.container:after {
+.clearfix:after {
 	content: '';
 	display: table;
 	clear: both;
@@ -23,11 +36,34 @@ h1 {
 	font-size: 30px;
 }
 
+h2 {
+	font-size: 24px;
+}
+
 
 /*Header*/
 
-
+.main-header {
+	padding: 5px 0;
+	min-width: 20px;
+	border: 1px dashed green;	/*для сетки*/
+	background-color: rgb(0, 0, 0);
 }
+
+.main-navigation {
+	float: left;
+	width: 610px;	/*для сетки*/
+	min-height: 50px;	/*для сетки*/
+	border: 1px dashed pink;	/*для сетки*/
+}
+
+.user-block {
+	float: right;
+	width: 70px;	/*для сетки*/
+	border: 2px dashed pink;	/*для сетки*/
+	min-height: 50px;	/*для сетки*/
+}
+
 .login {
 	display: block;
 	text-decoration: none;
@@ -35,21 +71,226 @@ h1 {
 }
 
 
+/*Main content*/
+
+.main-container {
+	margin: 57px auto;
+}
+
+.logo {
+	width: 368px;
+	margin: 0 auto;
+	margin-bottom: 20px;
+	border: 2px dashed pink;
+	min-height: 204px;	/*для сетки*/
+}
+
+
 /*Feauters*/
+
+.features-row {
+	margin-bottom: 35px;
+	padding: 5px;	/*для сетки*/
+	border: 2px dashed pink;
+	text-align: center;
+}
+
+.features-item {
+	float: left;
+	margin-right: 24px;
+	width: 284px;	/*для сетки*/
+	min-height: 165px;
+	border: 2px dashed blue;
+}
+
+.features-item:last-child {
+	margin-right: 0px;
+}
+
 .features-title {
 	position: relative;
 	font-size: 30px;
 	margin-bottom: 80px;
 }
+
 .features-title:after {
+	margin: 0 auto;
 	content: '';
 	position: absolute;
 	width: 30px;
 	height: 30px;
-	background: url("../img/square.png") no-repeat 0 0;
+	background: url(../img/square.png)no-repeat 0 0;
 }
 
-/*Social buttons*/
+
+/*Index content*/
+
+.index-content {
+	margin-bottom: 20px;
+	padding: 35px 40px;
+	background: url(../img/separator.png) no-repeat center, url(../img/background-page.png);
+}
+
+.content-column-left,
+.content-column-right {
+	border: 2px dashed blue;	/*для сетки*/
+	min-height: 230px;	/*для сетки*/
+	width: 320px;
+	padding: 20px;
+	color: rgb(0, 0, 0);
+}
+
+.content-column-left {
+	float: left;
+}
+
+.content-column-right {
+	float: right;
+}
+
+.content-column-title {
+	font-size: 30px;
+}
+
+
+/*Catalog*/
+
+.catalog {
+	border: 1px dashed pink;
+}
+
+.catalog-column-left {
+	float: left;
+	width: 200px;
+	border: 1px dashed pink;	/*для сетки*/
+	margin-right: 20px;
+}
+
+.catalog-column-right {
+	margin-left: 200px;
+	font-size: 0;
+	margin-bottom: 45px;
+}
+
+.catalog-item {
+	display: inline-block;
+	vertical-align: top;
+	width: 220px;
+	min-height: 285px;
+	margin-right: 15px;
+	margin-bottom: 20px;
+	margin-left: 0;
+	font-size: 14px;
+	border: 1px dashed blue;	/*для сетки*/
+}
+
+.catalog-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+.pagination {
+	margin-left: 20px;
+	border: 1px dashed blue;	/*для сетки*/
+	font-size: 14px;
+}
+
+
+/*Catalog-Item*/
+
+.item-gallery {
+	float: left;
+	width: auto;
+	border: 1px dashed pink;	/*для сетки*/
+	margin-right: 70px;
+	margin-bottom: 40px;
+}
+
+.item-gallery-small {
+	display: inline-block;
+}
+
+.item-info {
+	height: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.item-instoke {
+	float: left;
+}
+
+.item-art {
+	float: right;
+}
+
+
+/*Price*/
+
+.price-title {
+	font-size: 48px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.price-row {}
+
+.price-column-left {
+	float: left;
+	width: 40%;
+	margin-right: 80px;
+}
+
+.price-column-right {
+	float: left;
+	width: 45%;
+}
+
+.price-row p {
+	display: inline-block;
+	width: 380px;
+}
+
+.price-row p:first-child {
+	float: left;
+	margin-right: 15px;
+}
+
+.price-row p:last-child {
+	float: left;
+	margin-right: 80px;
+}
+
+
+/*Footer*/
+
+.main-footer {
+	padding: 20px 0;
+	border: 1px dashed green;
+	background: url("../img/background-footer.png");
+}
+
+.footer-contacts {
+	float: left;
+	width: 305px;
+	margin-right: 35px;
+	min-height: 90px;	/*для сетки*/
+	border: 1px dashed pink;	/*для сетки*/
+}
+
+.footer-social {
+	float: left;
+	width: 156px;
+	min-height: 80px;	/*для сетки*/
+	border: 1px dashed pink;	/*для сетки*/
+}
+
+.footer-copyright {
+	float: right;
+	width: 220px;
+	min-height: 80px;	/*для сетки*/
+	border: 1px dashed pink;	/*для сетки*/
+}
+
 .social-btn {
 	display: inline-block;
 	width: 43px;
